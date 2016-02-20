@@ -56,22 +56,30 @@ class BrowseTableViewController: UITableViewController {
         
         cell.bgImageView.image = UIImage(named: listArray[indexPath.row].foodImage)
         cell.mainLabel.text = listArray[indexPath.row].foodName
-        cell.ratingLabel.text = "Rating \(listArray[indexPath.row].rating)/5.0"
+        cell.ratingLabel.text = "Rating: \(listArray[indexPath.row].rating)/5.0"
         cell.foodTypeLabel.text = listArray[indexPath.row].foodType
         
         cell.moreInfoBtn.tag = indexPath.row
+        
         
         cell.moreInfoBtn.addTarget(self, action: "infoButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
     }
+
+    
     
     func infoButtonAction(sender: UIButton) {
         
         let detailViewController = storyboard?.instantiateViewControllerWithIdentifier("detailView") as! DetailViewController
+        let foodName = listArray[sender.tag].foodName
+        let foodRating = "Rating: \(listArray[sender.tag].rating)/5.0"
+        let bgImage = UIImage(named: listArray[sender.tag].foodImage)
         
-        
-        detailViewController.mainLabelString =
+        detailViewController.mainLabelString = foodName
+        detailViewController.ratingLabelString = foodRating
+        detailViewController.bgImageViewDetailImage = bgImage
+        detailViewController.title = foodName
         
         navigationController?.pushViewController(detailViewController, animated: true)
         
