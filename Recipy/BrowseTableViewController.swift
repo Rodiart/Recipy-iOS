@@ -21,9 +21,9 @@ class BrowseTableViewController: UITableViewController {
         navigationItem.titleView = UIImageView(image: UIImage(named: "Recipy"))
         navigationController?.navigationBar.translucent = false
         
-        listArray.append(List(foodName: "American Burger", foodType: "American", rating: 5, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "burger"))
-        listArray.append(List(foodName: "Chicken Pad Thai", foodType: "Thai", rating: 4, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "thai"))
-        listArray.append(List(foodName: "Ice Cream Sundae", foodType: "American", rating: 3.5, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "sundae"))
+        listArray.append(List(foodName: "American Burger", foodType: "AMERICAN", rating: 5, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "burger"))
+        listArray.append(List(foodName: "Chicken Pad Thai", foodType: "THAI", rating: 4, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "thai"))
+        listArray.append(List(foodName: "Ice Cream Sundae", foodType: "AMERICAN", rating: 3.5, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "sundae"))
         
         
     }
@@ -53,10 +53,12 @@ class BrowseTableViewController: UITableViewController {
         let imageViewFood = cell.viewWithTag(1) as! UIImageView
         let mainLabel = cell.viewWithTag(2) as! UILabel
         let ratingLabel = cell.viewWithTag(3) as! UILabel
+        let foodTypeLabel = cell.viewWithTag(4) as! UILabel
         
         imageViewFood.image = UIImage(named: listArray[indexPath.row].foodImage)
         mainLabel.text = listArray[indexPath.row].foodName
         ratingLabel.text = "Rating \(listArray[indexPath.row].rating)/5.0"
+        foodTypeLabel.text = listArray[indexPath.row].foodType
         
         return cell
     }
