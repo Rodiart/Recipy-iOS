@@ -13,6 +13,13 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.barTintColor = UIColor(red: 210/255.0, green: 35/255.0, blue: 35/255.0, alpha: 1.0)
+        navigationController?.navigationBar.barStyle = .Black
+        navigationItem.title = "My Recipes"
+        navigationController?.navigationBar.translucent = false
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -18,7 +18,7 @@ class BrowseTableViewController: UITableViewController {
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.barTintColor = UIColor(red: 210/255.0, green: 35/255.0, blue: 35/255.0, alpha: 1.0)
         navigationController?.navigationBar.barStyle = .Black
-        navigationItem.titleView = UIImageView(image: UIImage(named: "Recipy"))
+        navigationItem.titleView = UIImageView(image: UIImage(named: "RecipyIcn"))
         navigationController?.navigationBar.translucent = false
         
         listArray.append(List(foodName: "American Burger", foodType: "AMERICAN", rating: 5, indgredientsArray: ["test"], recipeArray: ["test"], foodImage: "burger"))
