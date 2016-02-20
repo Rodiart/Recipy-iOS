@@ -32,6 +32,10 @@ class BrowseTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+    }
 
     // MARK: - Table view data source
 
@@ -47,20 +51,30 @@ class BrowseTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell: BrowseTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! BrowseTableViewCell
 
-        // Configure the cell...
-        let imageViewFood = cell.viewWithTag(1) as! UIImageView
-        let mainLabel = cell.viewWithTag(2) as! UILabel
-        let ratingLabel = cell.viewWithTag(3) as! UILabel
-        let foodTypeLabel = cell.viewWithTag(4) as! UILabel
         
-        imageViewFood.image = UIImage(named: listArray[indexPath.row].foodImage)
-        mainLabel.text = listArray[indexPath.row].foodName
-        ratingLabel.text = "Rating \(listArray[indexPath.row].rating)/5.0"
-        foodTypeLabel.text = listArray[indexPath.row].foodType
+        cell.bgImageView.image = UIImage(named: listArray[indexPath.row].foodImage)
+        cell.mainLabel.text = listArray[indexPath.row].foodName
+        cell.ratingLabel.text = "Rating \(listArray[indexPath.row].rating)/5.0"
+        cell.foodTypeLabel.text = listArray[indexPath.row].foodType
+        
+        cell.moreInfoBtn.tag = indexPath.row
+        
+        cell.moreInfoBtn.addTarget(self, action: "infoButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
+    }
+    
+    func infoButtonAction(sender: UIButton) {
+        
+        let detailViewController = storyboard?.instantiateViewControllerWithIdentifier("detailView") as! DetailViewController
+        
+        
+        detailViewController.mainLabelString =
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
+        
     }
     
 

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146DCBB21C78417D00513859 /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146DCBB11C78417D00513859 /* BrowseTableViewCell.swift */; };
+		147965811C784498006D3D1C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147965801C784498006D3D1C /* DetailViewController.swift */; };
 		14A819891C778F7C00F93C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A819881C778F7C00F93C3C /* AppDelegate.swift */; };
-		14A8198B1C778F7C00F93C3C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8198A1C778F7C00F93C3C /* FirstViewController.swift */; };
 		14A8198D1C778F7C00F93C3C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8198C1C778F7C00F93C3C /* SecondViewController.swift */; };
 		14A819901C778F7C00F93C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A8198E1C778F7C00F93C3C /* Main.storyboard */; };
 		14A819921C778F7C00F93C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A819911C778F7C00F93C3C /* Assets.xcassets */; };
@@ -37,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		146DCBB11C78417D00513859 /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
+		147965801C784498006D3D1C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		14A819851C778F7C00F93C3C /* Recipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A819881C778F7C00F93C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14A8198A1C778F7C00F93C3C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		14A8198C1C778F7C00F93C3C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		14A8198F1C778F7C00F93C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14A819911C778F7C00F93C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147965821C7852FE006D3D1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14C392491C77E3B200BF85A0 /* BrowseTableViewController.swift */,
+				146DCBB11C78417D00513859 /* BrowseTableViewCell.swift */,
+				147965801C784498006D3D1C /* DetailViewController.swift */,
+				14A8198C1C778F7C00F93C3C /* SecondViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		14A8197C1C778F7C00F93C3C = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				14A819881C778F7C00F93C3C /* AppDelegate.swift */,
-				14A8198A1C778F7C00F93C3C /* FirstViewController.swift */,
-				14C392491C77E3B200BF85A0 /* BrowseTableViewController.swift */,
-				14A8198C1C778F7C00F93C3C /* SecondViewController.swift */,
+				147965821C7852FE006D3D1C /* Views */,
 				14A8198E1C778F7C00F93C3C /* Main.storyboard */,
 				14A819911C778F7C00F93C3C /* Assets.xcassets */,
 				14A819931C778F7C00F93C3C /* LaunchScreen.storyboard */,
@@ -267,9 +278,10 @@
 			files = (
 				14A8198D1C778F7C00F93C3C /* SecondViewController.swift in Sources */,
 				14A819891C778F7C00F93C3C /* AppDelegate.swift in Sources */,
-				14A8198B1C778F7C00F93C3C /* FirstViewController.swift in Sources */,
 				14C3924C1C77E87A00BF85A0 /* List.swift in Sources */,
 				14C3924A1C77E3B200BF85A0 /* BrowseTableViewController.swift in Sources */,
+				146DCBB21C78417D00513859 /* BrowseTableViewCell.swift in Sources */,
+				147965811C784498006D3D1C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
