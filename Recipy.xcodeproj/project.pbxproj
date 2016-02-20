@@ -15,6 +15,8 @@
 		14A819951C778F7C00F93C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A819931C778F7C00F93C3C /* LaunchScreen.storyboard */; };
 		14A819A01C778F7C00F93C3C /* RecipyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8199F1C778F7C00F93C3C /* RecipyTests.swift */; };
 		14A819AB1C778F7C00F93C3C /* RecipyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A819AA1C778F7C00F93C3C /* RecipyUITests.swift */; };
+		14C3924A1C77E3B200BF85A0 /* BrowseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C392491C77E3B200BF85A0 /* BrowseTableViewController.swift */; };
+		14C3924C1C77E87A00BF85A0 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3924B1C77E87A00BF85A0 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		14A819A61C778F7C00F93C3C /* RecipyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A819AA1C778F7C00F93C3C /* RecipyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipyUITests.swift; sourceTree = "<group>"; };
 		14A819AC1C778F7C00F93C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C392491C77E3B200BF85A0 /* BrowseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseTableViewController.swift; sourceTree = "<group>"; };
+		14C3924B1C77E87A00BF85A0 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				14A819881C778F7C00F93C3C /* AppDelegate.swift */,
 				14A8198A1C778F7C00F93C3C /* FirstViewController.swift */,
+				14C392491C77E3B200BF85A0 /* BrowseTableViewController.swift */,
 				14A8198C1C778F7C00F93C3C /* SecondViewController.swift */,
 				14A8198E1C778F7C00F93C3C /* Main.storyboard */,
 				14A819911C778F7C00F93C3C /* Assets.xcassets */,
 				14A819931C778F7C00F93C3C /* LaunchScreen.storyboard */,
 				14A819961C778F7C00F93C3C /* Info.plist */,
+				14C3924B1C77E87A00BF85A0 /* List.swift */,
 			);
 			path = Recipy;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 				14A8198D1C778F7C00F93C3C /* SecondViewController.swift in Sources */,
 				14A819891C778F7C00F93C3C /* AppDelegate.swift in Sources */,
 				14A8198B1C778F7C00F93C3C /* FirstViewController.swift in Sources */,
+				14C3924C1C77E87A00BF85A0 /* List.swift in Sources */,
+				14C3924A1C77E3B200BF85A0 /* BrowseTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +494,7 @@
 				14A819B11C778F7C00F93C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A819B21C778F7C00F93C3C /* Build configuration list for PBXNativeTarget "RecipyTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				14A819B41C778F7C00F93C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A819B51C778F7C00F93C3C /* Build configuration list for PBXNativeTarget "RecipyUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				14A819B71C778F7C00F93C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
